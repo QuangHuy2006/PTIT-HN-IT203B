@@ -1,21 +1,13 @@
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Bai4 {
+    public record userName(String username){};
     public static void main(String[] args) {
-        System.out.println("Mảng ban đầu : ");
-        for(User user : UserRepository.users){
-            System.out.println(user.username());
-        }
-        Map<String, User> cleanMap = UserRepository.users.stream()
-                .collect(Collectors.toMap(
-                        User::username,
-                        user -> user,
-                        (existing, replacement) -> existing
-                ));
-        System.out.println("Mảng sau khi lọc : ");
-        for(String username : cleanMap.keySet()) {
-            System.out.println(cleanMap.get(username).username());
-        }
+        List<userName> userNames = new ArrayList<>(Arrays.asList(new userName("Thu Huyen"), new userName("Hưng"), new userName("Quang")));
+        List<userName> distinctUserName = userNames.stream().distinct().toList();
+
+        System.out.println(distinctUserName);
     }
 }
