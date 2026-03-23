@@ -1,7 +1,7 @@
 package Session_12.src.main.java.BaiTap.BaiTapVeNha.Bai5.presentation;
 
-import BaiTap.BaiTapVeNha.Bai5.dao.PatientDAO;
-import BaiTap.BaiTapVeNha.Bai5.model.Patient;
+import Session_12.src.main.java.BaiTap.BaiTapVeNha.Bai5.dao.PatientDAO;
+import Session_12.src.main.java.BaiTap.BaiTapVeNha.Bai5.model.Patient;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/bai5";
         String user = "root";
-        String password = "Sp@tiz0510";
+        String password = "111111";
 
         Scanner sc = new Scanner(System.in);
 

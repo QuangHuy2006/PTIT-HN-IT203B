@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/bai4";
         String user = "root";
-        String password = "Sp@tiz0510";
+        String password = "111111";
 
         List<TestResult> list = new ArrayList<>();
 
